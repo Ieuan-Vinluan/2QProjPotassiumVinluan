@@ -1,0 +1,190 @@
+/*fonts to be used*/
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+body {
+	margin: 0;
+	position: relative;
+	overflow: auto;
+	background-color: #234628;
+	box-sizing: border-box;
+}
+.textCenter {
+	text-align: center;
+}
+div.contentHome {
+	width: 1270px;
+	height: 1100px;
+}
+/*under header*/
+header {
+	padding: 20px;
+	margin: 0;
+	color: #FFFFFF;
+	font-family: "Montserrat", serif;
+	position: absolute;
+	width: 100%;
+	height: 300px;
+	top: 38px;
+	position: relative;
+	background-color: #002408;
+}
+#HomeHeader {
+	font-size: 76px;
+	position: absolute;
+	font-weight: bold;
+	right: 55px;
+	top: 50px;
+}
+.Earthpng {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+.HomeImage1 {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 46.5%;
+}
+/*for the navigation bar*/
+nav {
+	margin: 0;
+	font-family: "Montserrat", sans-serif;
+	position: fixed;
+	top: 0px;
+	width: 100%;
+	z-index: 2;
+}
+nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #295E11; 
+}
+nav ul li {
+	float: left;	
+}
+nav ul li a {
+	display: block;
+	color: #FFFFFF;
+	text-align: center;
+	padding: 16px;
+	text-decoration: none;
+}
+nav ul li a:hover {
+  background-color: #33AC3B;
+}
+li#current {
+	background-color: #449425;
+}
+/*under article, main content*/
+article {
+	position: relative;
+	width: 100%;
+	height: 150px;
+	text-align: left;
+	z-index: 1;
+	color: #FFFFFF;
+}
+.content1-image2 {
+	position: absolute;
+	top: 150px;
+	left: 20px;
+	width: 500px;
+}
+.content1-image3 {
+	position: absolute;
+	top: 500px;
+	right: 20px;
+	width: 550px;
+}
+#HomeSubtitle {
+	position: absolute;
+	top: 10%;
+	left: 110px;
+	width: 100%;
+	font-size: 45px;
+	font-weight: bold;
+	font-family: "Playfair Display", serif;
+}
+/*first body of text*/
+#content1-text1 {
+	position: absolute;
+	width: 45%;
+	right: 20px;
+	top: 175px;
+	font-size: 23px;
+	text-align: right;
+	font-family: Ubuntu, sans-serif;
+}
+/*second body of text*/
+#content1-text2 {
+	position: absolute;
+	width: 45%;
+	left: 20px;
+	top: 500px;
+	font-size: 23px;
+	font-family: Ubuntu, sans-serif;
+}
+/*under section*/
+section {
+	position: absolute;
+	bottom: -300px;
+	text-align: center;
+	vertical-align: middle;
+	font-family: "Open Sans", sans-serif;
+	font-weight: bold;
+	font-size: 40px;
+	width: 100%;
+	height: 180px;
+	color: #FFFFFF;
+}
+/*positioning video*/
+section video {
+	position: absolute;
+	left: 200px;
+	top: 60px;
+	height: 540px;
+	width: 960px;
+}
+/*lead to video*/
+#click {
+	position: absolute;
+	font-family: Ubuntu, sans-serif;
+	font-weight: bold;
+	width: 100%;
+	font-size: 20px;
+	top: 0;
+	margin: 0;
+}
+section p {
+	position: absolute;
+	text-align: center;
+	top: 325%;
+}
+p#declaration {
+	position: absolute;
+	left: 350px;
+	font-family: "Playfair Display", serif;
+}
+/*under footer*/
+footer {
+	position: absolute;
+	top: 180%;
+	font-family: "Open Sans", sans-serif;
+	width: 100%;
+	background-color: #1E5631;
+	color: white;
+}
+footer > ul {
+	list-style-type: none;
+	text-align: left;
+}
+/*copyright and contact information*/
+p#copyright {
+	text-align: center;
+}
