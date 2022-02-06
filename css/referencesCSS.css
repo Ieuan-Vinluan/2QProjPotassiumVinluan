@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+div.content {
+	position: relative;
+	height: 1600px;
+}
+body {
+	overflow: auto;
+	overflow-x: hidden;
+	background: #234628;
+	color: #FFFFFF;
+}
+nav {
+	font-family: Raleway, 'Open Sans', sans-serif;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	z-index: 3;
+}
+nav span.logo > a {
+	color: white;
+	font-size: 30px;
+	position: absolute;
+	bottom: 20%;
+	left: 30px;
+	letter-spacing: 3px;
+	font-weight: bold;
+}
+nav span a:link {
+	color: #FFFFFF;
+}
+nav span a:visited {
+	color: #FFFFFF;
+}
+nav span a:hover {
+	color: rgba(128, 230, 88, 0.9)
+}
+nav span a:active {
+	color: #000000;
+}
+nav ul {
+	list-style-type: none;
+	overflow: hidden;
+	background: #295E11;
+	font-size: 18px;
+}
+nav ul li {
+	float: right;
+	border: 1px solid rgba(255, 255, 255, 0.1);
+}
+nav ul li a {
+	display: block;
+	text-align: center;
+	padding: 15px 25px;
+	color: #BDB8D7;
+}
+nav ul li a:link {
+	color: #BDB8D7;
+}
+nav ul li a:visited {
+	color: #FFFFFF;
+}
+nav ul li a:hover {
+	background: #33AC3B;
+	color: #FFFFFF;
+	border-top: 2px solid white;
+}
+nav ul li a:active {
+	color: #FFF;
+}
+nav ul li#current {
+	background: #449425;
+}
+div.heading {
+	height: 400px;
+	z-index: 2;
+}
+#HomeHeader {
+	font-family: 'Playfair Display', serif;
+	font-size: 55px;
+	width: 100%;
+	text-align: center;
+	font-weight: bold;
+	position: relative;
+	top: 80px;
+	z-index: 2;
+	width: 100%;
+}
+p.subtitle {
+	font-family: 'Playfair Display', serif;
+	font-size: 35px;
+	font-weight: bold;
+	position: relative;
+	bottom: 200px;
+	width: 100%;
+	text-align: center;
+}
+.article-img {
+	display: block;
+	margin: 0 auto;
+	width: 75%;
+	position: relative;
+	bottom: 150px;
+}
+.page-references-label {
+	font-family: 'Helvetica Neue', 'Open sans', sans-serif;
+	font-size: 40px;
+	font-weight: bold;
+}
+div.references-images h2.page-references-label {
+	position: relative;
+	right: 30px;
+}
+div.home-information, div.home-images, div.page-one-information, div.page-one-images, div.page-two-information, div.page-two-images, div.page-three-information, div.page-three-images, div.page-four-information, div.page-four-images, div.references-images {
+	position: relative;
+	left: 30px;
+}
+.information-label, .images-label, .other-media-label {
+	font-family: Raleway, 'Open Sans', sans-serif;
+	font-size: 30px;
+}
+li {
+	font-family: Raleway, 'Open Sans', sans-serif;
+	font-size: 20px;
+	position: relative;
+	left: 30px;
+}
+.information-sources-list li span, .images-sources-list li span {
+    font-style: italic;
+}
+div.sources {
+	position: relative;
+	bottom: 100px;
+}
+footer {
+	position: relative;
+	top: 5%;
+	z-index: 2;
+	font-family: Raleway, 'Gill Sans', 'Open Sans', 'Trebuchet MS', sans-serif;
+	font-size: 15px;
+	width: 100%;
+	background: rgba(0, 0, 0, 0.4);
+}
+footer span {
+	font-style: italic;
+}
+p#copyright {
+	position: relative;
+	text-align: center;
+	width: 400px;
+	margin: 0 auto;
+}
+footer div p, footer div ol {
+	position: relative;
+	left: 16px;
+}
+footer a div.facebook {
+	background: url('../images/icons.png') no-repeat -5px -5px;
+	width: 54px;
+	height: 54px;
+}
+footer a:hover div.facebook {
+	background: url('../images/icons.png') no-repeat -69px -5px;
+	width: 54px;
+	height: 54px;
+	position: relative;
+	animation: move 2s infinite;
+}
+footer a div.twitter {
+	background: url('../images/icons.png') no-repeat -133px -5px;
+	width: 54px;
+	height: 54px;
+	position: relative;
+}
+footer a:hover div.twitter {
+	background: url('../images/icons.png') no-repeat -133px -69px;
+	width: 54px;
+	height: 54px;
+	position: relative;
+	animation: move 2s infinite;
+}
+footer a div.tumblr {
+	background: url('../images/icons.png') no-repeat -5px -69px;
+	width: 54px;
+	height: 54px;
+}	
+footer a:hover div.tumblr {
+	background: url('../images/icons.png') no-repeat -69px -69px;
+	width: 54px;
+	height: 54px;
+	position: relative;
+	animation: move 2s infinite;
+}
+@keyframes move {
+	0% {bottom: 0;}
+	50% {bottom: 40px;}
+	100% {bottom: 0;}
+}
+div.social-media a {
+	display: block;
+	height: 54px;
+	width: 54px;
+}
+div.social-media {
+	position: relative;
+	display: flex;
+	justify-content: space-around;
+}
+.social-media-reach {
+	font-size: 20px;
+	width: 100%;
+	text-align: center;
+}

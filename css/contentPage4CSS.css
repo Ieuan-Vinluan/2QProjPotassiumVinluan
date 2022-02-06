@@ -1,0 +1,361 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+}
+div.content {
+	position: relative;
+	height: 3500px;
+}
+body {
+	overflow: auto;
+	overflow-x: hidden;
+	background: #234628;
+	color: #FFFFFF;
+}
+nav, .heading {
+	background: #002408;
+}
+nav {
+	font-family: Raleway, 'Open Sans', sans-serif;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	z-index: 3;
+}
+nav span.logo > a {
+	color: white;
+	font-size: 30px;
+	position: absolute;
+	bottom: 20%;
+	left: 30px;
+	letter-spacing: 3px;
+	font-weight: bold;
+}
+nav span a:link {
+	color: #FFFFFF;
+}
+nav span a:visited {
+	color: #FFFFFF;
+}
+nav span a:hover {
+	color: rgba(128, 230, 88, 0.9)
+}
+nav span a:active {
+	color: #000000;
+}
+nav ul {
+	list-style-type: none;
+	overflow: hidden;
+	background: #295E11;
+	font-size: 18px;
+}
+nav ul li {
+	float: right;
+	border: 1px solid rgba(255, 255, 255, 0.1);
+}
+nav ul li a {
+	display: block;
+	text-align: center;
+	padding: 15px 25px;
+	color: #BDB8D7;
+}
+nav ul li a:link {
+	color: #BDB8D7;
+}
+nav ul li a:visited {
+	color: #FFFFFF;
+}
+nav ul li a:hover {
+	background: #33AC3B;
+	color: #FFFFFF;
+	border-top: 2px solid white;
+}
+nav ul li a:active {
+	color: #FFF;
+}
+nav ul li#current {
+	background: #449425;
+}
+div.heading {
+	height: 450px;
+	z-index: 2;
+}
+p#page-subtitle {
+	font-family: 'Playfair Display', serif;
+	font-size: 45px;
+	font-weight: bold;
+	text-align: center;
+	position: relative;
+	top: 15px;
+}
+img.header-image-one {
+	position: relative;
+	right: 30px;
+	height: 450px;
+	z-index: 0;
+}
+#HomeHeader {
+	font-family: 'Playfair Display', serif;
+	font-size: 75px;
+	font-weight: bold;
+	position: absolute;
+	top: 160px;
+	right: -20px;
+	text-align: center;
+	z-index: 2;
+	width: 50%;
+}
+article {
+	position: absolute;
+	width: 100%;
+	height: 250px;
+	top: 550px;
+	right: 20px;
+	display: flex;
+	justify-content: space-around;
+}
+article > div {
+	z-index: 2;
+}
+article h2 {
+	font-family: Raleway, Verdana, 'Open Sans', sans-serif;
+	font-weight: bold;
+	font-size: 35px;
+	text-align: center;
+}
+article p {
+	position: relative;
+	font-family: Raleway, Ubuntu, 'Open Sans', sans-serif;
+	font-size: 20px;
+	line-height: 30px;
+	text-align: left;
+	top: 30px;
+}
+article .content-one {
+	position: relative;
+	width: 45%;
+	height: 750px;
+	padding: 25px;
+}
+img.article-image-one {
+	position: relative;
+	height: 300px;
+	margin: 0 auto;
+	display: block;
+}
+article .content-two {
+	position: relative;
+	width: 45%;
+	height: 700px;
+	padding: 25px;
+}
+img.article-image-two {
+	position: relative;
+	height: 300px;
+	margin: 0 auto;
+	display: block;
+}
+section.game {
+	position: relative;
+	top: 27%;
+	z-index: 2;
+	font-family: Raleway, Verdana, 'Open Sans', sans-serif;
+	font-size: 25px;
+	width: 100%;
+}
+section.game h2.game-header {
+	position: relative;
+	font-size: 45px;
+	font-family: 'Playfair Display', serif;
+	text-align: center;
+	width: 100%;
+}
+section.game p#game-intro {
+	font-size: 25px;
+	position: relative;
+	top: 10px;
+}
+section.game p.question {
+	font-size: 20px;
+}
+section.game div.options {
+	position: relative;
+	top: 30px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+section.game div.option {
+	border: 1px solid #FFFFFF;
+	width: 300px;
+	height: 400px;
+	color: #FFFFFF;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+section.game div.hint-button {
+	position: relative;
+	left: 60px;
+	top: 50px;
+	display: inline-block;
+}
+section.game div.hint-button p.help {
+	border: 1px solid #FFFFFF;
+	display: inline-block;
+	padding: 10px;
+	background:rgba(72, 255, 0, 0.397)
+}
+p.actual-hint {
+	opacity: 0;
+	transition: opacity 1s ease-in-out;
+}
+section.game div.hint-button:hover > p.actual-hint {
+	opacity: 1;
+}
+section.game p.option-answer {
+	position: relative;
+	left: 30px;
+	top: 10px;
+	font-size: 20px;
+}
+section.game a:hover {
+	background-color: #33AC3B;
+	transition: background-color 0.5s ease-in;	
+}
+div.correct-or-wrong {
+	position: relative;
+	top: 70px;
+	width: 100%;
+}
+p#question-one-correct, p#question-two-correct, p#question-three-correct {
+	text-align: center;
+	opacity: 0;
+}
+p#question-one-wrong, p#question-two-wrong, p#question-three-wrong {
+	text-align: center;
+	opacity: 0;
+}
+#question-one-correct:target, #question-two-correct:target, #question-three-correct:target {
+	opacity: 1;
+	transition: opacity 1.8s ease-in;
+}
+#question-one-wrong:target, #question-two-wrong:target, #question-three-wrong:target {
+	opacity: 1;
+	transition: opacity 1.8s ease-in;
+}
+div.question-two {
+	position: relative;
+	top: 120px;
+}
+div.question-three {
+	position: relative;
+	top: 220px;
+}
+section.declare {
+	position: relative;
+	top: 35%;
+	z-index: 2;
+	font-family: Raleway, Dubai, 'Open Sans', sans-serif;
+	font-size: 40px;
+	width: 100%;
+}
+section.declare p {
+	text-align: center;
+	width: 80%;
+	position: relative;
+	transform: translateX(10%);
+}
+img.Earth {
+	/* center image horizontally */
+	display: block;
+	margin: 0 auto;
+	height: 550px;
+}
+.bold {
+	font-weight: bold;
+}
+footer {
+	position: relative;
+	top: 45%;
+	z-index: 2;
+	font-family: Raleway, 'Gill Sans', 'Open Sans', 'Trebuchet MS', sans-serif;
+	font-size: 15px;
+	width: 100%;
+	background: rgba(0, 0, 0, 0.4);
+}
+footer span {
+	font-style: italic;
+}
+p#copyright {
+	position: relative;
+	text-align: center;
+	width: 400px;
+	margin: 0 auto;
+}
+footer div p, footer div ol {
+	position: relative;
+	left: 16px;
+}
+footer a div.facebook {
+	background: url('../images/icons.png') no-repeat -5px -5px;
+	width: 54px;
+	height: 54px;
+}
+footer a:hover div.facebook {
+	background: url('../images/icons.png') no-repeat -69px -5px;
+	width: 54px;
+	height: 54px;
+	position: relative;
+	animation: move 2s infinite;
+}
+footer a div.twitter {
+	background: url('../images/icons.png') no-repeat -133px -5px;
+	width: 54px;
+	height: 54px;
+	position: relative;
+}
+footer a:hover div.twitter {
+	background: url('../images/icons.png') no-repeat -133px -69px;
+	width: 54px;
+	height: 54px;
+	position: relative;
+	animation: move 2s infinite;
+}
+footer a div.tumblr {
+	background: url('../images/icons.png') no-repeat -5px -69px;
+	width: 54px;
+	height: 54px;
+}	
+footer a:hover div.tumblr {
+	background: url('../images/icons.png') no-repeat -69px -69px;
+	width: 54px;
+	height: 54px;
+	position: relative;
+	animation: move 2s infinite;
+}
+@keyframes move {
+	0% {bottom: 0;}
+	50% {bottom: 40px;}
+	100% {bottom: 0;}
+}
+div.social-media a {
+	display: block;
+	height: 54px;
+	width: 54px;
+}
+div.social-media {
+	position: relative;
+	display: flex;
+	justify-content: space-around;
+}
+.social-media-reach {
+	font-size: 20px;
+	width: 100%;
+	text-align: center;
+}

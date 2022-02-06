@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+}
+div.content {
+	position: relative;
+	height: 3600px;
+}
+body {
+	overflow: auto;
+	overflow-x: hidden;
+	background: #234628;
+	color: #FFFFFF;
+}
+nav, .heading {
+	background: #002408;
+}
+nav {
+	font-family: Raleway, 'Open Sans', sans-serif;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	z-index: 3;
+}
+nav span.logo > a {
+	color: white;
+	font-size: 30px;
+	position: absolute;
+	bottom: 20%;
+	left: 30px;
+	letter-spacing: 3px;
+	font-weight: bold;
+}
+nav span a:link {
+	color: #FFFFFF;
+}
+nav span a:visited {
+	color: #FFFFFF;
+}
+nav span a:hover {
+	color: rgba(128, 230, 88, 0.9)
+}
+nav span a:active {
+	color: #000000;
+}
+nav ul {
+	list-style-type: none;
+	overflow: hidden;
+	background: #295E11;
+	font-size: 18px;
+}
+nav ul li {
+	float: right;
+	border: 1px solid rgba(255, 255, 255, 0.1);
+}
+nav ul li a {
+	display: block;
+	text-align: center;
+	padding: 15px 25px;
+	color: #BDB8D7;
+}
+nav ul li a:link {
+	color: #BDB8D7;
+}
+nav ul li a:visited {
+	color: #FFFFFF;
+}
+nav ul li a:hover {
+	background: #33AC3B;
+	color: #FFFFFF;
+	border-top: 2px solid white;
+}
+nav ul li a:active {
+	color: #FFF;
+}
+nav ul li#current {
+	background: #449425;
+}
+div.heading {
+	position: relative;
+	height: 400px;
+	margin: 0 auto;
+}
+#HomeHeader {
+	font-family: 'Playfair Display', serif;
+	font-size: 75px;
+	font-weight: bold;
+	position: absolute;
+	top: 180px;
+	right: 65px;
+	text-align: right;
+	z-index: 2;	
+	width: 100%;
+}
+img.heading-image-one {
+	position: relative;
+	width: 600px;
+	transform: scaleX(-1);
+}
+article {
+	position: absolute;
+	width: 100%;
+	height: 250px;
+	top: 410px;
+	right: 20px;
+}
+article > div {
+	z-index: 2;
+}
+article h2 {
+	font-family: Raleway, Verdana, 'Open Sans', sans-serif;
+	font-weight: bold;
+	font-size: 30px;
+	text-align: center;
+}
+article p {
+	position: relative;
+	font-family: Raleway, Ubuntu, 'Open Sans', sans-serif;
+	font-size: 20px;
+	line-height: 30px;
+	text-align: left;
+	top: 50px;
+}
+article .content-one {
+	position: relative;
+	width: 100%;
+	padding: 25px;
+	top: 60px;
+	height: 400px;
+}
+img.content-one-image-one {
+	width: 35%;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+article .content-one p, article .content-one h2 {
+	width: 60%;
+}
+article .content-two {
+	position: relative;
+	width: 100%;
+	padding: 25px;
+	top: 150px;
+	height: 320px;
+}
+article .content-two p, article .content-two h2 {
+	width: 60%;
+}
+img.content-two-image-one {
+	width: 35%;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+section {
+	position: absolute;
+	top: 1500px;
+	z-index: 2;
+	font-family: 'Playfair Display', serif;
+	font-weight: bold;
+	font-size: 40px;
+	text-align: center;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.bold {
+	font-weight: bold;
+}
+footer {
+	position: absolute;
+	top: 1800px;
+	z-index: 2;
+	font-family: Raleway, 'Gill Sans', 'Open Sans', 'Trebuchet MS', sans-serif;
+	font-size: 15px;
+	width: 100%;
+	background: rgba(0, 0, 0, 0.4);
+}
+p#copyright {
+	position: relative;
+	text-align: center;
+	width: 400px;
+	margin: 0 auto;
+}
+footer div p, footer div ol {
+	position: relative;
+	left: 15px;
+}
+footer a div.facebook {
+	background: url('../images/icons.png') no-repeat -5px -5px;
+	width: 54px;
+	height: 54px;
+}
+footer a:hover div.facebook {
+	background: url('../images/icons.png') no-repeat -69px -5px;
+	width: 54px;
+	height: 54px;
+	position: relative;
+	animation: move 2s infinite;
+}
+footer a div.twitter {
+	background: url('../images/icons.png') no-repeat -133px -5px;
+	width: 54px;
+	height: 54px;
+	position: relative;
+}
+footer a:hover div.twitter {
+	background: url('../images/icons.png') no-repeat -133px -69px;
+	width: 54px;
+	height: 54px;
+	position: relative;
+	animation: move 2s infinite;
+}
+footer a div.tumblr {
+	background: url('../images/icons.png') no-repeat -5px -69px;
+	width: 54px;
+	height: 54px;
+}	
+footer a:hover div.tumblr {
+	background: url('../images/icons.png') no-repeat -69px -69px;
+	width: 54px;
+	height: 54px;
+	position: relative;
+	animation: move 2s infinite;
+}
+@keyframes move {
+	0% {bottom: 0;}
+	50% {bottom: 40px;}
+	100% {bottom: 0;}
+}
+div.social-media a {
+	display: block;
+	height: 54px;
+	width: 54px;
+}
+div.social-media {
+	position: relative;
+	display: flex;
+	justify-content: space-around;
+}
+.social-media-reach {
+	font-size: 20px;
+	width: 100%;
+	text-align: center;
+}

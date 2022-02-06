@@ -4,11 +4,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Arvo&display=swap');
 body {
 	margin: 0;
 	position: relative;
 	overflow: auto;
+	overflow-x: hidden;
 	background-color: #234628;
 	box-sizing: border-box;
 }
@@ -18,6 +19,8 @@ body {
 div.contentHome {
 	width: 1270px;
 	height: 1100px;
+	margin: 0;
+	padding: 0;
 }
 
 /*under header*/
@@ -25,21 +28,19 @@ header {
 	padding: 20px;
 	margin: 0;
 	color: #FFFFFF;
-	font-family: "Montserrat", serif;
-	position: absolute;
+	font-family: 'Playfair Display', serif;
 	width: 100%;
 	height: 300px;
-	top: 38px;
+	top: 15px;
 	position: relative;
 	background-color: #002408;
 }
 #HomeHeader {
-	font-size: 55px;
+	font-size: 60px;
 	position: absolute;
-	font-weight: bold;
-	right: 15px;
+	right: 20px;
 	text-align: center;
-	top: 50px;
+	top: 70px;
 }
 .Earthpng {
 	position: absolute;
@@ -51,39 +52,82 @@ header {
 	left: 0;
 	top: 0px;
 	width: 53%;
+	height: 340px;
 }
 
 /*for the navigation bar*/
 nav {
-	margin: 0;
-	font-family: "Montserrat", sans-serif;
-	position: fixed;
-	top: 0px;
+	font-family: Raleway, 'Open Sans', sans-serif;
 	width: 100%;
-	z-index: 2;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 3;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+}
+nav span.logo > a {
+	color: white;
+	font-size: 30px;
+	position: absolute;
+	bottom: 20%;
+	left: 30px;
+	letter-spacing: 3px;
+	font-weight: bold;
+	text-decoration: none;
+}
+nav span a:link {
+	color: #FFFFFF;
+}
+nav span a:visited {
+	color: #FFFFFF;
+}
+nav span a:hover {
+	color: rgba(128, 230, 88, 0.9)
+}
+nav span a:active {
+	color: #000000;
 }
 nav ul {
 	list-style-type: none;
+	overflow: hidden;
+	background: #295E11;
+	font-size: 18px;
 	margin: 0;
 	padding: 0;
-	overflow: hidden;
-	background-color: #295E11; 
+	box-sizing: border-box;
+	text-decoration: none;
 }
 nav ul li {
-	float: left;	
+	float: right;
+	border: 1px solid rgba(255, 255, 255, 0.1);
+	
 }
 nav ul li a {
 	display: block;
-	color: #FFFFFF;
 	text-align: center;
-	padding: 16px;
+	padding: 15px 25px;
+	color: #BDB8D7;
 	text-decoration: none;
 }
-nav ul li a:hover {
-  background-color: #33AC3B;
+nav ul li a:link {
+	color: #BDB8D7;
 }
-li#current {
-	background-color: #449425;
+nav ul li a:visited {
+	color: #FFFFFF;
+}
+nav ul li a:hover {
+	background: #33AC3B;
+	color: #FFFFFF;
+	border-top: 2px solid white;
+}
+nav ul li a:active {
+	color: #FFF;
+}
+nav ul li#current {
+	background: #449425;
 }
 
 /*under article, main content*/
@@ -110,7 +154,7 @@ article {
 	right: 3%;
 	top: 150px;
 	font-size: 30px;
-	font-family: Ubuntu, sans-serif;
+	font-family: Raleway, 'Open Sans', sans-serif;
 }
 
 /*under aside*/
@@ -121,7 +165,7 @@ aside {
 }
 .HomeImage2 {
 	position: absolute;
-	left: -40px;
+	left: 20px;
 	top: -50px;
 	height: 480px;
 }
@@ -166,16 +210,79 @@ section p {
 footer {
 	position: absolute;
 	top: 150%;
-	font-family: "Open Sans", sans-serif;
+	font-family: Raleway, "Open Sans", sans-serif;
 	width: 100%;
-	background-color: #1E5631;
+	background: rgba(0, 0, 0, 0.4);
+	font-size: 15px;
 	color: white;
+	height: 400px;
 }
-footer > ul {
-	list-style-type: none;
-	text-align: left;
+footer ol {
+	margin: 0 0 0 20px;
+	padding: 0;
+}
+footer span {
+	font-style: italic;
 }
 /*copyright and contact information*/
 p#copyright {
+	text-align: center;
+}
+/*for social media links*/
+footer a div.facebook {
+	background: url('../images/icons.png') no-repeat -5px -5px;
+	width: 54px;
+	height: 54px;
+}
+footer a:hover div.facebook {
+	background: url('../images/icons.png') no-repeat -69px -5px;
+	width: 54px;
+	height: 54px;
+	position: relative;
+	animation: move 2s infinite;
+}
+footer a div.twitter {
+	background: url('../images/icons.png') no-repeat -133px -5px;
+	width: 54px;
+	height: 54px;
+	position: relative;
+}
+footer a:hover div.twitter {
+	background: url('../images/icons.png') no-repeat -133px -69px;
+	width: 54px;
+	height: 54px;
+	position: relative;
+	animation: move 2s infinite;
+}
+footer a div.tumblr {
+	background: url('../images/icons.png') no-repeat -5px -69px;
+	width: 54px;
+	height: 54px;
+}	
+footer a:hover div.tumblr {
+	background: url('../images/icons.png') no-repeat -69px -69px;
+	width: 54px;
+	height: 54px;
+	position: relative;
+	animation: move 2s infinite;
+}
+@keyframes move {
+	0% {bottom: 0;}
+	50% {bottom: 40px;}
+	100% {bottom: 0;}
+}
+div.social-media a {
+	display: block;
+	height: 54px;
+	width: 54px;
+}
+div.social-media {
+	position: relative;
+	display: flex;
+	justify-content: space-around;
+}
+.social-media-reach {
+	font-size: 20px;
+	width: 100%;
 	text-align: center;
 }
