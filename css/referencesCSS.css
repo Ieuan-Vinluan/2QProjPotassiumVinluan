@@ -9,6 +9,7 @@
 div.content {
 	position: relative;
 	height: 1600px;
+	width: 1350px;
 }
 body {
 	overflow: auto;

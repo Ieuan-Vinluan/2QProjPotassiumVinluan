@@ -21,6 +21,7 @@ nav, .heading {
 div.content {
 	position: relative;
 	height: 1800px;
+	width: 1350px;
 }
 /*for the navigation bar*/
 nav {
