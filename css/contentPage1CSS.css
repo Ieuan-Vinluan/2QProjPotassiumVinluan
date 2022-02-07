@@ -180,7 +180,7 @@ article {
 /*under section*/
 section {
 	position: absolute;
-	bottom: -300px;
+	bottom: 250px;
 	text-align: center;
 	vertical-align: middle;
 	font-family: "Open Sans", sans-serif;
@@ -189,24 +189,6 @@ section {
 	width: 100%;
 	height: 180px;
 	color: #FFFFFF;
-}
-/*positioning video*/
-section video {
-	position: absolute;
-	left: 200px;
-	top: 60px;
-	height: 540px;
-	width: 960px;
-}
-/*lead to video*/
-#click {
-	position: absolute;
-	font-family: Ubuntu, sans-serif;
-	font-weight: bold;
-	width: 100%;
-	font-size: 20px;
-	top: 0;
-	margin: 0;
 }
 section p {
 	position: absolute;
@@ -221,7 +203,7 @@ p#declaration {
 /*under footer*/
 footer {
 	position: absolute;
-	top: 180%;
+	top: 140%;
 	font-family: Raleway, "Open Sans", sans-serif;
 	width: 100%;
 	background: rgba(0, 0, 0, 0.4);
@@ -278,6 +260,7 @@ footer a:hover div.tumblr {
 	position: relative;
 	animation: move 2s infinite;
 }
+/*animation that makes the logo go up and down sa long as the cursor is hovering over it*/
 @keyframes move {
 	0% {bottom: 0;}
 	50% {bottom: 40px;}
@@ -288,6 +271,7 @@ div.social-media a {
 	height: 54px;
 	width: 54px;
 }
+/*for the layout of the social media links*/
 div.social-media {
 	position: relative;
 	display: flex;

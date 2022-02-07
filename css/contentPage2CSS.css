@@ -14,6 +14,7 @@ body {
 	overflow: auto;
 	overflow-x: hidden;
 }
+/*for the header*/
 nav, .heading {
 	background: #002408;
 }
@@ -21,6 +22,7 @@ div.content {
 	position: relative;
 	height: 1800px;
 }
+/*for the navigation bar*/
 nav {
 	font-family: Raleway, 'Open Sans', sans-serif;
 	width: 100%;
@@ -82,6 +84,7 @@ nav ul li a:active {
 nav ul li#current {
 	background: #449425;
 }
+/*for the header*/
 div.heading {
 	position: relative;
 	height: 430px;
@@ -101,6 +104,7 @@ div.heading {
 	text-align: center;
 	z-index: 2;
 }
+/*under article, main content*/
 img.image-one {
 	position: relative;
 	width: 50%;
@@ -149,10 +153,11 @@ div.intro {
 	transform: translateX(-50%);
 	text-align: center;
 }
+/*first body of text*/
 div.content-one {
 	position: absolute;
 	width: 100%;
-	top: 220px; /*450px*/
+	top: 220px; 
 	left: 0;
 }
 div.content-one img.content-one-image-one {
@@ -165,6 +170,7 @@ div.content-one p {
 	left: 40%;
 	width: 60%;
 } 
+/*second body of text*/
 div.content-two {
 	position: absolute;
 	width: 100%;
@@ -184,6 +190,7 @@ div.content-two img.content-two-image-one {
 	height: 249px;
 	
 }
+/*under section*/
 section {
 	position: relative;
 	width: 100%;
@@ -200,6 +207,7 @@ p.statement {
 span.loss {
 	font-weight: bold;
 }
+/*under footer*/
 footer {
 	position: absolute;
 	bottom: -350px;
@@ -220,11 +228,13 @@ p#copyright {
 	width: 400px;
 	margin: 0 auto;
 }
+/*for social media links*/
 footer a div.facebook {
 	background: url('../images/icons.png') no-repeat -5px -5px;
 	width: 54px;
 	height: 54px;
 }
+/*when the cursor is hovering, the icon goes up and down*/
 footer a:hover div.facebook {
 	background: url('../images/icons.png') no-repeat -69px -5px;
 	width: 54px;
@@ -257,6 +267,7 @@ footer a:hover div.tumblr {
 	position: relative;
 	animation: move 2s infinite;
 }
+/*animation that makes the logo go up and down sa long as the cursor is hovering over it*/
 @keyframes move {
 	0% {bottom: 0;}
 	50% {bottom: 40px;}
@@ -267,6 +278,7 @@ div.social-media a {
 	height: 54px;
 	width: 54px;
 }
+/*for the layout of the social media links*/
 div.social-media {
 	position: relative;
 	display: flex;

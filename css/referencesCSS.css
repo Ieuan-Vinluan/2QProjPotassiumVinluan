@@ -16,6 +16,7 @@ body {
 	background: #234628;
 	color: #FFFFFF;
 }
+/*for the navigation bar*/
 nav {
 	font-family: Raleway, 'Open Sans', sans-serif;
 	width: 100%;
@@ -77,10 +78,12 @@ nav ul li a:active {
 nav ul li#current {
 	background: #449425;
 }
+/*for header*/
 div.heading {
 	height: 400px;
 	z-index: 2;
 }
+/*under article, main content*/
 article {
 	position: relative;
 	width: 100%;
@@ -147,6 +150,7 @@ div.sources {
 	position: relative;
 	bottom: 100px;
 }
+/*under footer*/
 footer {
 	position: relative;
 	top: 5%;
@@ -169,11 +173,13 @@ footer div p, footer div ol {
 	position: relative;
 	left: 16px;
 }
+/*for social media links*/
 footer a div.facebook {
 	background: url('../images/icons.png') no-repeat -5px -5px;
 	width: 54px;
 	height: 54px;
 }
+/*when the cursor is hovering, the icon goes up and down*/
 footer a:hover div.facebook {
 	background: url('../images/icons.png') no-repeat -69px -5px;
 	width: 54px;
@@ -206,6 +212,7 @@ footer a:hover div.tumblr {
 	position: relative;
 	animation: move 2s infinite;
 }
+/*animation that makes the logo go up and down sa long as the cursor is hovering over it*/
 @keyframes move {
 	0% {bottom: 0;}
 	50% {bottom: 40px;}
@@ -216,6 +223,7 @@ div.social-media a {
 	height: 54px;
 	width: 54px;
 }
+/*for the layout of the social media links*/
 div.social-media {
 	position: relative;
 	display: flex;

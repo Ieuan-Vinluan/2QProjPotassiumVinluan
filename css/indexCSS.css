@@ -218,7 +218,6 @@ footer {
 	background: rgba(0, 0, 0, 0.4);
 	font-size: 15px;
 	color: white;
-	height: 400px;
 }
 footer ol {
 	margin: 0 0 0 20px;
@@ -270,6 +269,7 @@ footer a:hover div.tumblr {
 	position: relative;
 	animation: move 2s infinite;
 }
+/*animation that makes the logo go up and down sa long as the cursor is hovering over it*/
 @keyframes move {
 	0% {bottom: 0;}
 	50% {bottom: 40px;}
@@ -280,6 +280,7 @@ div.social-media a {
 	height: 54px;
 	width: 54px;
 }
+/*for the layout of the social media links*/
 div.social-media {
 	position: relative;
 	display: flex;

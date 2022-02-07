@@ -17,9 +17,11 @@ body {
 	background: #234628;
 	color: #FFFFFF;
 }
+/*for header*/
 nav, .heading {
 	background: #002408;
 }
+/*for the navigation bar*/
 nav {
 	font-family: Raleway, 'Open Sans', sans-serif;
 	width: 100%;
@@ -81,6 +83,7 @@ nav ul li a:active {
 nav ul li#current {
 	background: #449425;
 }
+/*under header*/
 div.heading {
 	position: relative;
 	height: 400px;
@@ -102,6 +105,7 @@ img.heading-image-one {
 	width: 600px;
 	transform: scaleX(-1);
 }
+/*under article, main content*/
 article {
 	position: absolute;
 	width: 100%;
@@ -126,6 +130,7 @@ article p {
 	text-align: left;
 	top: 50px;
 }
+/*first body of text*/
 article .content-one {
 	position: relative;
 	width: 100%;
@@ -142,6 +147,7 @@ img.content-one-image-one {
 article .content-one p, article .content-one h2 {
 	width: 60%;
 }
+/*second body of text*/
 article .content-two {
 	position: relative;
 	width: 100%;
@@ -158,6 +164,7 @@ img.content-two-image-one {
 	bottom: 0;
 	right: 0;
 }
+/*under section*/
 section {
 	position: absolute;
 	top: 1500px;
@@ -174,6 +181,7 @@ section {
 .bold {
 	font-weight: bold;
 }
+/*under footer*/
 footer {
 	position: absolute;
 	top: 1800px;
@@ -193,11 +201,13 @@ footer div p, footer div ol {
 	position: relative;
 	left: 15px;
 }
+/*for social media links*/
 footer a div.facebook {
 	background: url('../images/icons.png') no-repeat -5px -5px;
 	width: 54px;
 	height: 54px;
 }
+/*when the cursor is hovering, the icon goes up and down*/
 footer a:hover div.facebook {
 	background: url('../images/icons.png') no-repeat -69px -5px;
 	width: 54px;
@@ -230,6 +240,7 @@ footer a:hover div.tumblr {
 	position: relative;
 	animation: move 2s infinite;
 }
+/*animation that makes the logo go up and down sa long as the cursor is hovering over it*/
 @keyframes move {
 	0% {bottom: 0;}
 	50% {bottom: 40px;}
@@ -240,6 +251,7 @@ div.social-media a {
 	height: 54px;
 	width: 54px;
 }
+/*for the layout of the social media links*/
 div.social-media {
 	position: relative;
 	display: flex;

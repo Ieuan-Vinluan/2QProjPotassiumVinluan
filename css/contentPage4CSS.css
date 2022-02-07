@@ -17,9 +17,11 @@ body {
 	background: #234628;
 	color: #FFFFFF;
 }
+/*for header*/
 nav, .heading {
 	background: #002408;
 }
+/*for the navigation bar*/
 nav {
 	font-family: Raleway, 'Open Sans', sans-serif;
 	width: 100%;
@@ -81,6 +83,7 @@ nav ul li a:active {
 nav ul li#current {
 	background: #449425;
 }
+/*for header*/
 div.heading {
 	height: 450px;
 	z-index: 2;
@@ -110,6 +113,7 @@ img.header-image-one {
 	z-index: 2;
 	width: 50%;
 }
+/*under article*/
 article {
 	position: absolute;
 	width: 100%;
@@ -136,6 +140,7 @@ article p {
 	text-align: left;
 	top: 30px;
 }
+/*first body of text*/
 article .content-one {
 	position: relative;
 	width: 45%;
@@ -148,6 +153,7 @@ img.article-image-one {
 	margin: 0 auto;
 	display: block;
 }
+/*second body of text*/
 article .content-two {
 	position: relative;
 	width: 45%;
@@ -160,6 +166,7 @@ img.article-image-two {
 	margin: 0 auto;
 	display: block;
 }
+/*under section for game*/
 section.game {
 	position: relative;
 	top: 27%;
@@ -186,6 +193,7 @@ section.game p#game-intro {
 section.game p.question {
 	font-size: 20px;
 }
+/*for the layout of the boxes of the choices*/
 section.game div.options {
 	position: relative;
 	top: 30px;
@@ -240,6 +248,7 @@ div.correct-or-wrong {
 	top: 70px;
 	width: 100%;
 }
+/*initially hide the message (correct or wrong)*/
 p#question-one-correct, p#question-two-correct, p#question-three-correct {
 	text-align: center;
 	opacity: 0;
@@ -248,6 +257,7 @@ p#question-one-wrong, p#question-two-wrong, p#question-three-wrong {
 	text-align: center;
 	opacity: 0;
 }
+/*when answer is given, make one of two messages (right or wrong) appear*/
 #question-one-correct:target, #question-two-correct:target, #question-three-correct:target {
 	opacity: 1;
 	transition: opacity 1.8s ease-in;
@@ -264,6 +274,7 @@ div.question-three {
 	position: relative;
 	top: 220px;
 }
+/*under section for statement*/
 section.declare {
 	position: relative;
 	top: 35%;
@@ -287,6 +298,7 @@ img.Earth {
 .bold {
 	font-weight: bold;
 }
+/*under footer*/
 footer {
 	position: relative;
 	top: 40%;
@@ -309,11 +321,13 @@ footer div p, footer div ol {
 	position: relative;
 	left: 16px;
 }
+/*for social media links*/
 footer a div.facebook {
 	background: url('../images/icons.png') no-repeat -5px -5px;
 	width: 54px;
 	height: 54px;
 }
+/*when the cursor is hovering, the icon goes up and down*/
 footer a:hover div.facebook {
 	background: url('../images/icons.png') no-repeat -69px -5px;
 	width: 54px;
@@ -346,6 +360,7 @@ footer a:hover div.tumblr {
 	position: relative;
 	animation: move 2s infinite;
 }
+/*animation that makes the logo go up and down sa long as the cursor is hovering over it*/
 @keyframes move {
 	0% {bottom: 0;}
 	50% {bottom: 40px;}
@@ -356,6 +371,7 @@ div.social-media a {
 	height: 54px;
 	width: 54px;
 }
+/*for the layout of the social media links*/
 div.social-media {
 	position: relative;
 	display: flex;
