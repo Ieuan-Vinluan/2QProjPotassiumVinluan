@@ -17,7 +17,6 @@ body {
 	text-align: center;
 }
 div.contentHome {
-	width: 1270px;
 	height: 1100px;
 	margin: 0;
 	padding: 0;
@@ -25,7 +24,7 @@ div.contentHome {
 
 /*under header*/
 header {
-	padding: 20px;
+	padding: 0;
 	margin: 0;
 	color: #FFFFFF;
 	font-family: 'Playfair Display', serif;
@@ -33,6 +32,10 @@ header {
 	height: 300px;
 	top: 15px;
 	position: relative;
+}
+div.heading {
+	position: relative;
+	height: 340px;
 	background-color: #002408;
 }
 #HomeHeader {
@@ -234,6 +237,7 @@ footer a div.facebook {
 	width: 54px;
 	height: 54px;
 }
+/*when the cursor is hovering, the icon goes up and down*/
 footer a:hover div.facebook {
 	background: url('../images/icons.png') no-repeat -69px -5px;
 	width: 54px;

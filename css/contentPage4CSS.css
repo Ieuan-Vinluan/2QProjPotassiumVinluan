@@ -179,6 +179,9 @@ section.game p#game-intro {
 	font-size: 25px;
 	position: relative;
 	top: 10px;
+	width: 96%;
+	left: 2%;
+	text-align: center;
 }
 section.game p.question {
 	font-size: 20px;
@@ -223,6 +226,10 @@ section.game p.option-answer {
 	left: 30px;
 	top: 10px;
 	font-size: 20px;
+}
+section.game p.question {
+	position: relative;
+	left: 10px;
 }
 section.game a:hover {
 	background-color: #33AC3B;
@@ -282,7 +289,7 @@ img.Earth {
 }
 footer {
 	position: relative;
-	top: 45%;
+	top: 40%;
 	z-index: 2;
 	font-family: Raleway, 'Gill Sans', 'Open Sans', 'Trebuchet MS', sans-serif;
 	font-size: 15px;
